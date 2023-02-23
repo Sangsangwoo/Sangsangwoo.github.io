@@ -4,12 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+        :root {
+            --primary-color: #8f0d0d;
+            --text-color: #3d0d0d;
+            --background-color: #c40d0d;
+        }
+        
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary-color);
+        }
+
+        .links-list {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .links-list > li {
+            margin: 10px;
+            padding: 4px 28px;;
+            text-align: center;
+            background-color: var(--background-color);
+            border-radius: 150px;
+        }
+
+        .links-list a {
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1.5rem;
+        }
+
+        .links-list li:not(:first-of-type) {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+    <nav>
+        <ul class="links-list">
+            <li><a href="Character.html">Character</a></li>
+            <li><a href="Story.html">Story</a></li>
+            <li><a href="Rank.html">Rank</a></li>
+            <li><a href="Stage.html">Stage</a></li>
+        </ul>
+    </nav>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         .images {
             margin: 0 100px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(170px, 2fr));
+            grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
             grid-gap: 1em;
             width: 100%;
         }
@@ -45,42 +102,74 @@
     기스 하워드, 고우키 등의 콜라보 캐릭터 4명 - 총 15명의 새로운
     캐릭터를 선보였다 (엘리자는 외전인 레볼루션에서 처음 등장했다. 정규 넘버링 시리즈 참전이 7 FR).<p></p>
 
-    <div class="images">
-        <img src="image/Ganryu.png" width="120px">
-        <img src="Gigas.png" width="120px">
-        <img src="Geese Howard.png" width="120px">
-        <img src="image/Negan.jpg" width="120px">
-        <img src="Noctis.png" width="120px">
-        <img src="Nina.png" width="120px">
-        <img src="image/Devil Jin.jpg" width="120px">
-        <img src="Dragunov.png" width="1-20px">
-        <img src="Lars.jpg" width="120px">
-        <img src="image/Lucky Chloe.png" width="120px">
-        <img src="Leo.jpg" width="120px">
-        <img src="image/Lei.png" width="120px">
-        <img src="Law.png" width="120px">
-        <img src="image/Lee Chaolan.jpg" width="120px">
-        <img src="Lidia.png" width="120px">
-        <img src="image/Leroy.jpg" width="120px">
-        <img src="image/Lili.jpg" width="120px">
-        <img src="image/Master Raven.png" width="120px">
-        <img src="image/Marduk.jpg" width="120px">
-        <img src="image/image/Miguel.png" width="120px">
-        <img src="image/Bob.png" width="120px">
-        <img src="image/image/Bryan.png" width="120px">
-        <img src="image/Xiaoyu.jpg" width="120px">
-        <img src="image/image/Shaheen.png" width="120px">
-        <img src="image/Steve.png" width="120px">
-        <img src="image/image/Armor King.png" width="120px">
-        <img src="image/Asuka.jpg" width="120px">
-        <img src="image/image/Akuma.jpg" width="120px">
-        <img src="image/Anna.jpg" width="120px">
-        <img src="image/image/Alisa.jpg" width="120px">
-        <img src="image/Eddy.jpg" width="120px">
-        <img src="image/image/Eliza.jpg" width="120px">
-        <img src="image/Yoshimitsu.png" width="120px">
-        <img src="image/image/Zafina.jpg" width="120px">
-        <img src="image/Jack-7.png" width="120px">
-        <img src="image/image/Josie.png" width="120px">
+    <div class="image-container">
+        <img src="image/Akuma.jpg" width="150px">
+        <img src="image/Alisa.jpg" width="150px">
+        <img src="image/Anna.jpg" width="150px">
+        <img src="image/Armor King.png" width="150px">
+        <img src="image/Asuka.jpg" width="150px">
+        <img src="image/Bob.png" width="150px">
+        <img src="image/Bryan.png" width="150px">
+        <img src="image/Claudio.jpg" width="150px"> 
+        <img src="image/Devil Jin.jpg" width="150px">
+        <img src="image/Dragunov.png" width="150px">
+        <img src="image/Eddy.jpg" width="150px">
+        <img src="image/Eliza.jpg" width="150px">
+        <img src="image/Fahkumram.png" width="150px">
+        <img src="image/Feng.png" width="150px">
+        <img src="image/Ganryu.png" width="150px">
+        <img src="image/Geese Howard.png" width="150px">
+        <img src="image/Gigas.png" width="150px">
+        <img src="image/Heihachi.jpg" width="150px">
+        <img src="image/Hwoarang.jpg" width="150px">
+        <img src="image/Jack-7.png" width="150px">
+        <img src="image/Jin.png" width="150px">
+        <img src="image/Josie.png" width="150px">
+        <img src="image/Julia.png" width="150px">
+        <img src="image/Katarina.png" width="150px">
+        <img src="image/Kazumi.png" width="150px">
+        <img src="image/Kazuya.png" width="150px">
+        <img src="image/King.png" width="150px">
+        <img src="image/Kuma.jpg" width="150px">
+        <img src="image/Kunimitsu.jpg" width="150px">
+        <img src="image/Lars.jpg" width="150px">
+        <img src="image/Law.png" width="150px">
+        <img src="image/Lee Chaolan.jpg" width="150px">
+        <img src="image/Lei.png" width="150px">
+        <img src="image/Leo.jpg" width="150px">
+        <img src="image/Leroy.jpg" width="150px">
+        <img src="image/Lidia.png" width="150px">
+        <img src="image/Lili.jpg" width="150px">
+        <img src="image/Lucky Chloe.png" width="150px">
+        <img src="image/Marduk.jpg" width="150px">
+        <img src="image/Master Raven.png" width="150px">
+        <img src="image/Miguel.png" width="150px">
+        <img src="image/Negan.jpg" width="150px">
+        <img src="image/Nina.png" width="150px">
+        <img src="image/Noctis.png" width="150px">
+        <img src="image/Panda.png" width="150px">
+        <img src="image/Paul.png" width="150px">
+        <img src="image/Shaheen.png" width="150px">
+        <img src="image/Steve.png" width="150px">
+        <img src="image/Xiaoyu.jpg" width="150px">
+        <img src="image/Yoshimitsu.png" width="150px">
+        <img src="image/Zafina.jpg" width="150px">
     </div>
-</ht
+    </body>
+    
+    <style>.image-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+      }
+      
+      .image-item {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .image-item img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      </style>
